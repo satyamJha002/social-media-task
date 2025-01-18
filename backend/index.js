@@ -16,7 +16,10 @@ connectDB();
 // middleware function used to parse incoming request bodies, allowing your server to access data sent from clients in either JSON format (express.json()) or URL-encoded format (express.urlencoded()), which is typically used for traditional HTML form submissions.
 
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:3000"],
+  origin: [
+    "https://social-media-task-five.vercel.app",
+    "http://localhost:3000",
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
