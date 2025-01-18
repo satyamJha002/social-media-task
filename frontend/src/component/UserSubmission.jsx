@@ -60,10 +60,13 @@ const UserSubmissionForm = () => {
             submissionData.append(`image`, file);
           });
         }
-        const response = await fetch("http://localhost:5000/api/user/create", {
-          method: "POST",
-          body: submissionData,
-        });
+        const response = await fetch(
+          "https://social-media-task-01ws.onrender.com/api/user/create",
+          {
+            method: "POST",
+            body: submissionData,
+          }
+        );
 
         if (!response.ok) {
           throw new Error(`Submitted failed: ${response.statusText}`);

@@ -27,13 +27,16 @@ const AdminDashboard = () => {
   const fetchSubmissions = async () => {
     try {
       const token = localStorage.getItem("adminToken");
-      const response = await fetch("http://localhost:5000/api/user", {
-        method: "GET",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        "https://social-media-task-01ws.onrender.com/api/user",
+        {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
       if (!response.ok) {
         throw new Error("Failed to fetch submissions");
       }
@@ -89,7 +92,7 @@ const AdminDashboard = () => {
                       <img
                         key={idx}
                         src={
-                          `http://localhost:5000${image.url}` ||
+                          `https://social-media-task-01ws.onrender.com${image.url}` ||
                           "/placeholder.svg"
                         }
                         alt={`${submission.name}'s upload ${idx + 1}`}
