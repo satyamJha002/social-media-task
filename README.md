@@ -2,6 +2,16 @@
 
 A full-stack application that allows users to submit their social media information and images, with an admin dashboard to view all submissions.
 
+### User submission, Admin and dashboard.
+   
+   https://social-media-task-five.vercel.app/admin - admin login
+   https://social-media-task-five.vercel.app - user submission
+   https://social-media-task-five.vercel.app/dashboard - dashboard if dashboard is not showing you have to go to admin and login but user just uploading the files it show in the but admin can see the dashboard if logged in.
+
+#### Admin login username and password - 
+    username - satyamJha002
+    password - Satyam@123
+
 ## Table of Contents
 - [Prerequisites](#prerequisites)
 - [Technology Stack](#technology-stack)
